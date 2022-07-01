@@ -1,0 +1,797 @@
+/*===== GOOGLE FONTS =====*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+* {
+
+  margin: 0; 
+
+  padding: 0;
+
+	border: none;	outline: none; 
+
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+
+  text-transform: capitalize;
+
+  font: 16px, 'Roboto', sans-serif;
+
+  transition: all .3s cubic-bezier(.16,.8,.62,1.52);
+
+}
+
+*::selection {
+
+    color: #FFF;
+
+    background: red;
+
+}
+
+html {
+
+    font-size: 62.5%;
+
+    overflow-x: hidden;
+
+}
+
+html::-webkit-scrollbar {
+
+    width: 1.3rem;
+
+}
+
+html::-webkit-scrollbar-track {
+
+    background: #000;
+
+}
+
+html::-webkit-scrollbar-thumb {
+
+    background: red;
+
+}
+
+body {
+
+    background: #FFFBF9;
+
+}
+
+section {
+
+    padding:0 7%;
+
+    min-height: 100vh;
+
+    padding-top: 9rem;
+
+}
+
+.btn {    
+
+  z-index: 0;
+
+  color: #FFF;
+
+  overflow: hidden;
+
+  margin-top: 1rem;
+
+  padding:1rem 4rem;
+
+  font-size: 1.7rem;
+
+  position: relative;
+
+  border-radius: 5rem;
+
+  display: inline-block;
+
+  background: red;
+
+  text-decoration: none;
+
+}
+
+.btn::before {
+
+  top: 0; 
+
+  left: 0;
+
+  content:'';
+
+  z-index: -1;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: #444;
+
+  position: absolute;
+
+  clip-path: polygon;
+
+  transition: .3s linear(0 0, 100% 0, 0 0, 0% 100%);
+
+}
+
+.btn:hover::before {
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.heading {
+
+    color: #666;
+
+    font-size: 3rem;
+
+}
+
+.heading span {
+
+    color: red;
+
+}
+
+/*Scroll Up*/
+
+.scroll-top {
+
+  right: 2rem;
+
+  z-index: 100;
+
+  display: none;
+
+  bottom: 7.5rem; 
+
+  position: fixed;
+
+}
+
+.scroll-top img {
+
+  height: 7rem;
+
+}
+
+/* Header */
+
+header {
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+
+  z-index: 1000;
+
+  position: fixed;
+
+  background: #FFF;
+
+  padding: 2.5rem 7%;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+}
+
+header .logo {
+
+  color: #666;
+
+  font-size: 2.5rem;
+
+  text-decoration: none;
+
+}
+
+header .logo span {
+
+  color: red;
+
+  text-decoration: none;
+
+}
+
+header .navbar ul {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  list-style: none;
+
+}
+
+header .navbar ul li {
+
+    margin-left: 2.5rem;
+
+}
+
+header .navbar ul li a {
+
+  color: #999;
+
+  font-size: 2rem;
+
+  text-decoration: none;
+
+}
+
+header .navbar ul li a.active,
+
+header .navbar ul li a:hover {
+
+  padding: .7rem 0;
+
+  color: red;
+
+  border-bottom: .2rem solid red;
+
+}
+
+#menu {
+
+  color: #999;
+
+  display: none;
+
+  font-size: 3rem;
+
+  cursor: pointer;
+
+}
+
+/* Home */
+
+.home {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.home .image {
+
+  flex: 1 1 40rem;
+
+}
+
+.home .image img {
+
+  width: 100%;
+
+}
+
+.home .content {
+
+  flex: 1 1 40rem;
+
+}
+
+.home .content span {
+
+  color: red;
+
+  font-size: 2.5rem;
+
+}
+
+.home .content h3 {
+
+  color: #666;
+
+  font-size: 5rem;
+
+}
+
+.home .content p {
+
+  color: #999;
+
+  padding:1rem 0;
+
+  font-size: 2rem;
+
+}
+
+/* Protect */
+
+.protect .heading {
+
+  padding: 1rem;
+
+  text-align: center;
+
+}
+
+.protect .box-container {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.protect .box-container .box {
+
+    width: 34rem;
+
+    margin: 2rem;
+
+    padding: 2rem;
+
+    background: #FFF;
+
+    text-align: center;
+
+    border-radius: .5rem;
+
+    border: .1rem solid rgba(0,0,0,.1);
+
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+
+.protect .box-container .box img {
+
+  width: 17rem;
+
+  height: 17rem;
+
+}
+
+.protect .box-container .box h3 {
+
+  color: #666;
+
+  padding:1rem 0;
+
+  font-size: 2.5rem;
+
+}
+
+.protect .box-container .box p {
+
+  color: #999;
+
+  padding: .5rem;
+
+  font-size: 1.4rem;
+
+}
+
+.protect .box-container .box:hover {
+
+  transform: translateY(-1rem);
+
+}
+
+/* Syptoms */
+
+.symtoms {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+.symtoms .content {
+
+  flex: 1 1 40rem;
+
+}
+
+.symtoms .image {
+
+  flex: 1 1 40rem;
+
+}
+
+.symtoms .image img {
+
+  width: 100%;
+
+}
+
+.symtoms .content p {
+
+  color: #999;
+
+  
+
+  padding:1rem 0;
+
+  font-size: 1.5rem;
+
+}
+
+.symtoms .content ul {
+
+  display: flex;
+
+  padding: 1rem 0;
+
+  flex-wrap: wrap;
+
+}
+
+.symtoms .content ul .two {
+
+  padding-left: 4.5rem;
+
+}
+
+.symtoms .content ul li {
+
+  color: #666;
+
+  padding: .5rem 0;
+
+  margin-left: 2rem;
+
+  font-size: 1.5rem;
+
+}
+
+/* Prevent */
+
+.prevent {
+
+  background: #222;
+
+}
+
+.prevent .row {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  padding: 2rem 0;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.prevent .row .image {
+
+  height: 35rem;
+
+  flex:1 1 37rem;
+
+  text-align: center;
+
+}
+
+.prevent .row .image img {
+
+  width:100%;
+
+  height:100%;
+
+  object-fit: cover;
+
+}
+
+.prevent .row .content {
+
+  padding:2rem 0;
+
+  flex:1 1 37rem;
+
+}
+
+.prevent .row .content .heading {
+
+  color: #FFF;
+
+}
+
+.prevent .row .content p {
+
+  color: #AAA; 
+
+  padding: 1rem 0;
+
+  background: #222;
+
+  font-size: 1.7rem;
+
+}
+
+.prevent .row .content ul li {
+
+  color: #AAA;
+
+  padding:.5rem 0;
+
+  margin-left: 2rem;
+
+  font-size: 1.5rem;
+
+}
+
+/* Handwash */
+
+.handwash .heading {
+
+  padding: 1rem;
+
+  text-align: center;
+
+}
+
+.handwash .box-container {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.handwash .box-container .box {
+
+  margin: 2rem;
+
+  margin-top: 3rem;
+
+  background: #FFF;
+
+  text-align: center;
+
+  position: relative;
+
+  padding: 2rem 3.5rem;
+
+  border: .1rem solid rgba(0,0,0,.1);
+
+}
+
+.handwash .box-container .box img {
+
+  width: 17rem;
+
+  height: 17rem;
+
+}
+
+.handwash .box-container .box h3 {
+
+  color: #666;
+
+  padding:1rem 0;
+
+  font-size: 2rem;
+
+}
+
+.handwash .box-container .box span {
+
+  top: -2rem; 
+
+  left: -2rem;
+
+  color: #FFF;
+
+  width: 5rem; 
+
+  height: 5rem;
+
+  display: block;
+
+  font-size: 2rem;
+
+  line-height: 5rem;
+
+  position: absolute;
+
+  border-radius: 5rem;
+
+  background:red;
+
+}
+
+/* Spread */
+
+.spread .heading {
+
+  padding: 1rem;
+
+  text-align: center;
+
+}
+
+.spread .image {
+
+  width: 100%;
+
+  height: 80vh;
+
+  background-size: cover;
+
+  background-position: center;
+
+  background: url(img/map.png) no-repeat;
+
+}
+
+/* Footer */
+
+.footer {
+
+  padding-top: 0;
+
+  background: #333;
+
+  min-height: auto;
+
+}
+
+.footer .box-container {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+}
+
+.footer .box-container .box {
+
+  margin: 2rem;
+
+  flex:1 1 25rem;
+
+}
+
+.footer .box-container .box h3 {
+
+  color: #FFF;
+
+  font-size: 2.5rem;
+
+  font-weight: normal;
+
+  padding-bottom: 2rem;
+
+}
+
+.footer .box-container .box p {
+
+  color: #CCC;
+
+  padding: 1rem 0;
+
+  font-size: 1.5rem;
+
+}
+
+.footer .box-container .box p i {
+
+  color: red;
+
+  padding-right: 1rem;
+
+}
+
+.footer .box-container .box a {
+
+  color: #CCC;
+
+  display: block;
+
+  padding: 1rem 0;
+
+  font-size: 1.5rem;
+
+  text-decoration: none;
+
+}
+
+.footer .box-container .box a:hover {
+
+  color: red;
+
+}
+
+.footer .box-container .box .share {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  padding: 1rem 0;
+
+}
+
+.footer .box-container .box .share a {
+
+  width: 4rem;
+
+  height:4rem;
+
+  line-height: 2rem;
+
+  margin-right: 1rem;
+
+  text-align: center;
+
+  border-radius: 5rem;
+
+  text-decoration: none;
+
+  border: .1rem solid #FFF3;
+
+}
+
+.footer .box-container .box .share a:hover {
+
+  background: #FFF;
+
+}
+
+.footer .copyright {
+
+  color: #FFF;
+
+  font-size: 2rem;
+
+  padding: 2rem 1rem;
+
+  text-align: center;
+
+  font-weight: normal;
+
+  border-top: .1rem solid #fff3;
+
+}
+
+.footer .copyright a {
+
+  color: red;
+
+  text-decoration: none;
+
+}
