@@ -3,7 +3,9 @@
 This is a responsive COVID-19 website clone using HTML5, CSS3 and JavaScript.
 
 
-## You can find me:
+## Find Me On
+
+Feel free to reach out, if you have questions/suggestions/ideas or want to collaborate with me.
 
 [Contact](mailto://oluwakemi.toluwalase@gmail.com)
 
