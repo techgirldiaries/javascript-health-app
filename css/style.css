@@ -4,21 +4,23 @@
 
 * {
 
-  margin: 0; 
+    margin: 0; 
 
-  padding: 0;
+    padding: 0;
 
-	border: none;	outline: none; 
+    border: none;	
+   
+    outline: none; 
 
-  box-sizing: border-box;
+    box-sizing: border-box;
 
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
-  text-transform: capitalize;
+    text-transform: capitalize;
 
-  font: 16px, 'Roboto', sans-serif;
+    font: 16px, 'Roboto', sans-serif;
 
-  transition: all .3s cubic-bezier(.16,.8,.62,1.52);
+    transition: all .3s cubic-bezier(.16,.8,.62,1.52);
 
 }
 
